@@ -1,0 +1,199 @@
+
+/*{border: 1px solid red;}*/
+body{
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+	height: 940px;
+	overflow: hidden;
+}
+header{
+	width: 100vw;
+	height: 100vh;
+	background: url(../images/background.jpg) center top no-repeat;
+	position: relative;
+}
+.front{
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.45);
+	display: grid;
+	grid-template-rows: 0.5fr 0.7fr 0.5fr;
+}
+.header_top_content, .header_bottom_content{
+	width: 100%;
+	height: 100%;
+}
+.header_center_content{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-column-gap: 1%;
+}
+.river_cleaning{
+	border-radius: 50%;
+	width: 80%;
+	height: 100%;
+	background: url(../images/river.jpg) center top no-repeat;
+	background-size: cover;
+	margin: 0 auto;
+	animation: circle1 5s ease-in-out infinite;
+}
+.tree_planting{
+	border-radius: 300px;
+	background: url(../images/tree.jpg) center top no-repeat;
+	background-size: cover;
+	width: 80%;
+	height: 100%;
+	margin: 0 auto;
+	animation: circle1 3s ease-in-out infinite;
+}
+
+.garbage_sorting{
+	border-radius: 300px;
+	background: url(../images/sort.jpg);
+	background-size: cover;
+	width: 80%;
+	height: 100%;
+	margin: 0 auto;
+	animation: circle1 5s ease-in-out infinite;
+}
+
+#circle {
+	position: relative;
+	border-radius: 100%;  /* сделать "резиновый" круг */
+	font: 5vmin monospace;  /* моноширный шрифт */
+	font-size: 2.7em;
+	color: white;
+}
+  #circle b {
+	position: absolute; left: 50%;  /* все буквы собрать в одну точку по середине */
+	width: 0;  /* убрать отступ */
+  }
+  /* верхние 17 букв «Шпаргалка блоггера» */
+  #circle b:nth-of-type(-n+11) {
+	bottom: 50%;
+	transform-origin: 0% 100%;
+	padding-bottom: 50%;  /* от значения свойства зависит приближение текста к центру круга */
+  }
+#circle b:nth-of-type(1) {transform: rotate(330deg);}
+#circle b:nth-of-type(2) {transform: rotate(335deg);}
+#circle b:nth-of-type(3) {transform: rotate(340deg);}
+#circle b:nth-of-type(4) {transform: rotate(345deg);}
+#circle b:nth-of-type(5) {transform: rotate(350deg);}
+#circle b:nth-of-type(6) {transform: rotate(355deg);}
+#circle b:nth-of-type(7) {transform: rotate(360deg);}
+#circle b:nth-of-type(8) {transform: rotate(5deg);}
+#circle b:nth-of-type(9) {transform: rotate(10deg);}
+#circle b:nth-of-type(10) {transform: rotate(15deg);}
+#circle b:nth-of-type(11) {transform: rotate(20deg);}
+#circle1 {
+	position: relative;
+	border-radius: 100%;  /* сделать "резиновый" круг */
+	font: 5vmin monospace;  /* моноширный шрифт */
+	font-size: 2.7em;
+	color: white;
+}
+  #circle1 b {
+	position: absolute; left: 50%;  /* все буквы собрать в одну точку по середине */
+	width: 0;  /* убрать отступ */
+  }
+  /* верхние 17 букв «Шпаргалка блоггера» */
+  #circle1 b:nth-of-type(-n+16) {
+	bottom: 50%;
+	transform-origin: 0% 100%;
+	padding-bottom: 50%;  /* от значения свойства зависит приближение текста к центру круга */
+  }
+#circle1 b:nth-of-type(1) {transform: rotate(317.5deg);}
+#circle1 b:nth-of-type(2) {transform: rotate(322.5deg);}
+#circle1 b:nth-of-type(3) {transform: rotate(327.5deg);}
+#circle1 b:nth-of-type(4) {transform: rotate(332.5deg);}
+#circle1 b:nth-of-type(5) {transform: rotate(337.5deg);}
+#circle1 b:nth-of-type(6) {transform: rotate(342.5deg);}
+#circle1 b:nth-of-type(7) {transform: rotate(347.5deg);}
+#circle1 b:nth-of-type(8) {transform: rotate(357.5deg);}
+#circle1 b:nth-of-type(9) {transform: rotate(2.5deg);}
+#circle1 b:nth-of-type(10) {transform: rotate(7.5deg);}
+#circle1 b:nth-of-type(11) {transform: rotate(12.5deg);}
+#circle1 b:nth-of-type(12) {transform: rotate(17.5deg);}
+#circle1 b:nth-of-type(13) {transform: rotate(22.5deg);}
+#circle1 b:nth-of-type(14) {transform: rotate(27.5deg);}
+#circle1 b:nth-of-type(15) {transform: rotate(32.5deg);}
+#circle1 b:nth-of-type(16) {transform: rotate(37.5deg);}
+#circle2 {
+	position: relative;
+	border-radius: 100%;  /* сделать "резиновый" круг */
+	font: 5vmin monospace;  /* моноширный шрифт */
+	font-size: 2.7em;
+	color: white;
+}
+  #circle2 b {
+	position: absolute; left: 50%;  /* все буквы собрать в одну точку по середине */
+	width: 0;  /* убрать отступ */
+  }
+  /* верхние 17 букв «Шпаргалка блоггера» */
+  #circle2 b:nth-of-type(-n+17) {
+	bottom: 50%;
+	transform-origin: 0% 100%;
+	padding-bottom: 50%;  /* от значения свойства зависит приближение текста к центру круга */
+  }
+#circle2 b:nth-of-type(1) {transform: rotate(315deg);}
+#circle2 b:nth-of-type(2) {transform: rotate(320deg);}
+#circle2 b:nth-of-type(3) {transform: rotate(325deg);}
+#circle2 b:nth-of-type(4) {transform: rotate(330deg);}
+#circle2 b:nth-of-type(5) {transform: rotate(335deg);}
+#circle2 b:nth-of-type(6) {transform: rotate(340deg);}
+#circle2 b:nth-of-type(7) {transform: rotate(345deg);}
+#circle2 b:nth-of-type(8) {transform: rotate(350deg);}
+#circle2 b:nth-of-type(9) {transform: rotate(355deg);}
+#circle2 b:nth-of-type(10) {transform: rotate(360deg);}
+#circle2 b:nth-of-type(11) {transform: rotate(5deg);}
+#circle2 b:nth-of-type(12) {transform: rotate(10deg);}
+#circle2 b:nth-of-type(13) {transform: rotate(15deg);}
+#circle2 b:nth-of-type(14) {transform: rotate(20deg);}
+#circle2 b:nth-of-type(15) {transform: rotate(25deg);}
+#circle2 b:nth-of-type(16) {transform: rotate(30deg);}
+#circle2 b:nth-of-type(17) {transform: rotate(35deg);}
+
+@keyframes circle1{
+	from { margin-top: 0% }
+	2.5% { margin-top: 0.75% }
+	5% { margin-top: 1.5% }
+	7.5% { margin-top: 2.25% }
+	10% { margin-top: 3% }
+	12.5% { margin-top: 3.75% }
+	15% { margin-top: 4.5% }
+	17.5% { margin-top: 5.25% }
+	20% { margin-top: 6% }
+	22.5% { margin-top: 6.75% }
+	25% { margin-top: 7.5% }
+	27.5% { margin-top: 6.75% }
+	30% { margin-top: 6% }
+	32.5% { margin-top: 5.25 }
+	35% { margin-top: 4.5% }
+	37.5% { margin-top: 3.75% }
+	40% { margin-top: 3% }
+	42.5% { margin-top: 2.25% }
+	45% { margin-top: 1.5% }
+	47.5% { margin-top: 0.75% }
+	50% { margin-top: 0% }
+	52.5% { margin-top: -0.75% }
+	55% { margin-top: -1.5% }
+	57.5% { margin-top: -2.25% }
+	60% { margin-top: -3% }
+	62.5% { margin-top: -3.75% }
+	65% { margin-top: -4.5% }
+	67.5% { margin-top: -5.25% }
+	70% { margin-top: -6% }
+	72.5% { margin-top: -6.75% }
+	75% { margin-top: -7.5% }
+	77.5% { margin-top: -6.75% }
+	80% { margin-top: -6% }
+	82.5% { margin-top: -5.25% }
+	85% { margin-top: -4.5% }
+	87.5% { margin-top: -3.75% }
+	90% { margin-top: -3% }
+	92.5% { margin-top: -2.25% }
+	95% { margin-top: -1.5% }
+	97.5% { margin-top: -0.75 }
+	to { margin-top: 0% }
+}
